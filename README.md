@@ -1,2 +1,2 @@
 # ShopingListApp
-Alışveriş Listeleme Uygulamas
+Alışveriş Listeleme Uygulaması
