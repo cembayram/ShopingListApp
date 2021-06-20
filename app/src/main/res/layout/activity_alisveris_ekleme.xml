@@ -1,9 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_quiz"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AlisverisEkleme">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".AlisverisEkleme"
+    android:background="@color/colorGreen">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/alisverisAdi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
+        android:hint="Alışverişinize bir ad verin"
+        android:padding="2dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/urunAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:hint="Lütfen ekleyeceğiniz ürünü yazınız."
+        android:padding="2dp"
+        android:textSize="20sp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün miktar bilgisini yazınız"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="24dp"
+        android:textSize="15sp"
+        android:id="@+id/urunMiktari"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün adet bilgisini yazınız?"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/urunAdedi"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürünün fiyatını yazınız"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="2dp"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/urunFiyati"/>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ürün ile ilgili ekstra not yazınız"
+        android:background="#0091EA"
+        android:textColor="#fff"
+        android:padding="2dp"
+        android:textSize="15sp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/urunNot"/>
+
+    <Button
+        android:id="@+id/buttonUrunKaydet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="24dp"
+        android:padding="2dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/header_bg"
+        android:text="Kaydet" />
+
+</LinearLayout>
+
